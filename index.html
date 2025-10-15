@@ -1,10 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>GitHub to EC2 Deployment</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Web Deployment Demo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #007bff, #00d4ff);
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 500px;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+
+    .btn {
+      background: white;
+      color: #007bff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 1em;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn:hover {
+      background: #007bff;
+      color: white;
+      transform: scale(1.05);
+    }
+  </style>
 </head>
-<body style="font-family: Arial; text-align: center; margin-top: 100px;">
-  <h1>This is a test deployment from GitHub to EC2 🚀</h1>
-  <p>Successfully hosted from GitHub repository!</p>
+<body>
+  <h1>🚀 Automated Web Deployment Successful!</h1>
+  <p>This web page is hosted on an AWS EC2 instance and automatically updates when you push changes to the main branch in GitHub.</p>
+
+  <button class="btn" onclick="alert('Deployed successfully via GitHub Actions!')">Test Deployment</button>
+
+  <footer>© 2025 My Deployment Demo | Powered by GitHub Actions + AWS EC2</footer>
 </body>
 </html>
